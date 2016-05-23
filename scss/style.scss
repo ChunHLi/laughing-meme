@@ -446,6 +446,29 @@ button {
 		z-index: 2;
 		padding: 2em 0 3em;
 		background-color: $color-5;
+
+		p {
+			line-height: 2;
+			text-indent: 2em;
+		}
+
+		.l-p {
+			margin-bottom: 2em;
+		}
+
+		h2 {
+			line-height: 3;
+			font-family: $secondary-font;
+			font-style:italic;
+			color: #999999
+		}
+
+		h3{
+			line-height: 2;
+			font-family: $secondary-font;
+			font-style: italic;
+			color: #999999
+		}
 	}
 
 	.content-wrapper > * {
@@ -453,19 +476,6 @@ button {
 		max-width: 800px;
 		margin: 0 auto;
 		color: $color-4;
-	}
-
-	.content-wrapper p {
-		margin-bottom: 2em;
-		line-height: 2;
-		text-indent: 2em;
-	}
-
-	.content-wrapper h2 {
-		line-height: 4;
-		font-family: $secondary-font;
-		font-style:italic;
-		color: #999999;
 	}
 
 	.selected & {
@@ -490,7 +500,11 @@ button {
 		}
 
 		.content-wrapper h2{
-			font-size: 1.8rem;
+			font-size: 3.6rem;
+		}
+
+		.content-wrapper h3{
+			font-size: 2.7rem;
 		}
 	}
 }
