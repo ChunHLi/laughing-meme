@@ -3,7 +3,7 @@ jQuery(document).ready(function(event){
 		navigation = $('.cd-primary-nav'),
 		triggerNav = $('.cd-nav-trigger'),
 		logo = $('.cd-logo');
-
+	
 	triggerNav.on('click', function(){
 		if( triggerNav.hasClass('project-open') ) {
 			//close project
@@ -35,10 +35,10 @@ jQuery(document).ready(function(event){
 		var visibleProjectContent =  projectsContainer.find('.selected').children('.cd-project-info'),
 			windowHeight = $(window).height();
 
-		visibleProjectContent.animate({'scrollTop': windowHeight}, 300);
+		visibleProjectContent.animate({'scrollTop': windowHeight}, 300); 
 	});
 
-	//add/remove the .has-boxshadow to the project content while scrolling
+	//add/remove the .has-boxshadow to the project content while scrolling 
 	var scrolling = false;
 	projectsContainer.find('.cd-project-info').on('scroll', function(){
 		if( !scrolling ) {
